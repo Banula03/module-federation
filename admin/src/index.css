@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  background-color: transparent; /* Essential for MFE embedding */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #ffffff;
+}
+
+/* Custom scrollbar for monochromatic look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
