@@ -12,7 +12,7 @@ export default function PortalLayout({
   const { isOpen, toggle } = useSidebar();
 
   return (
-    <div className="flex h-screen bg-neutral-50 overflow-hidden">
+    <div className="flex h-screen bg-white overflow-hidden">
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header onMenuClick={toggle} />

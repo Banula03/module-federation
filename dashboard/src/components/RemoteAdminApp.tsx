@@ -10,7 +10,7 @@ init({
   remotes: [
     {
       name: "admin",
-      entry: "http://localhost:5001/assets/remoteEntry.js",
+      entry: "http://localhost:5002/assets/remoteEntry.js",
       type: "module",
     },
   ],
@@ -72,7 +72,7 @@ export default function RemoteAdminApp() {
         <p className="text-rose-400 font-medium">{error}</p>
         <button 
           onClick={() => window.location.reload()}
-          className="mt-4 px-4 py-2 bg-rose-600 hover:bg-rose-500 text-white rounded-lg transition-all"
+          className="mt-4 px-4 py-2 bg-rose-600 hover:bg-rose-500 text-black rounded-lg transition-all"
         >
           Retry Connection
         </button>

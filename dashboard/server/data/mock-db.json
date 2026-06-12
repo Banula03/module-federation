@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "email": "sarah.c@company.com",
+    "role": "Super Admin",
+    "status": "Active",
+    "avatar": "SC"
+  },
+  {
+    "id": 2,
+    "name": "Michael Ross",
+    "email": "m.ross@company.com",
+    "role": "Security lead",
+    "status": "Active",
+    "avatar": "MR"
+  },
+  {
+    "id": 3,
+    "name": "James Wilson",
+    "email": "j.wilson@company.com",
+    "role": "Admin",
+    "status": "Inactive",
+    "avatar": "JW"
+  },
+  {
+    "id": 4,
+    "name": "Elena Rodriguez",
+    "email": "e.rod@company.com",
+    "role": "Auditor",
+    "status": "Active",
+    "avatar": "ER"
+  },
+  {
+    "id": 5,
+    "name": "David Kim",
+    "email": "d.kim@company.com",
+    "role": "Admin",
+    "status": "Inactive",
+    "avatar": "DK"
+  },
+  {
+    "id": 6,
+    "name": "Emily Frost",
+    "email": "emily.f@company.com",
+    "role": "Security Lead",
+    "status": "Active",
+    "avatar": "EF"
+  },
+  {
+    "id": 7,
+    "name": "banula",
+    "email": "banulamethsara83@gmail.com",
+    "role": "Security Lead",
+    "status": "Active",
+    "avatar": "B"
+  },
+  {
+    "id": 8,
+    "name": "lochana",
+    "email": "akarshashevon@gmail.com",
+    "role": "Security Lead",
+    "status": "Active",
+    "avatar": "L"
+  },
+  {
+    "id": 9,
+    "name": "Robert King",
+    "email": "robert.k@company.com",
+    "role": "Auditor",
+    "status": "Active",
+    "avatar": "RK"
+  },
+  {
+    "id": 10,
+    "name": "cdscc",
+    "email": "banulamethsara83@gmail.com",
+    "role": "Admin",
+    "status": "Active",
+    "avatar": "C"
+  },
+  {
+    "id": 11,
+    "name": "asSSSX S",
+    "email": "akarshashevon@gmail.com",
+    "role": "Auditor",
+    "status": "Inactive",
+    "avatar": "AS"
+  }
+]

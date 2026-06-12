@@ -29,7 +29,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
 
         <div>
           <p className="text-xs text-neutral-500 font-medium tracking-wider uppercase">Portal</p>
-          <h1 className="text-lg font-bold text-black leading-tight uppercase tracking-tight">
+          <h1 className="text-lg font-bold text-white leading-tight uppercase tracking-tight">
             {pageTitle}
           </h1>
         </div>
@@ -38,28 +38,28 @@ export default function Header({ onMenuClick }: HeaderProps) {
       {/* Right: search + bell + avatar */}
       <div className="flex items-center gap-3">
         {/* Search */}
-        <div className="hidden sm:flex items-center gap-2 bg-neutral-100 px-3 py-2 rounded-xl border border-neutral-200 focus-within:border-black transition-colors">
+        <div className="hidden sm:flex items-center gap-2 bg-neutral-900 px-3 py-2 rounded-xl border border-neutral-800 focus-within:border-white transition-colors">
           <Search className="w-4 h-4 text-neutral-500" />
           <input
             type="text"
             placeholder="Search..."
-            className="bg-transparent text-sm text-black placeholder-neutral-400 outline-none w-40"
+            className="bg-transparent text-sm text-white placeholder-neutral-400 outline-none w-40"
           />
         </div>
 
         {/* Bell */}
-        <button className="relative p-2 rounded-xl text-neutral-400 hover:text-black hover:bg-neutral-100 transition-all duration-200">
+        <button className="relative p-2 rounded-xl text-neutral-600 hover:text-white hover:bg-neutral-900 transition-all duration-200">
           <Bell className="w-5 h-5" />
-          <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-black ring-2 ring-white" />
+          <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-white ring-2 ring-white" />
         </button>
 
         {/* Avatar */}
         <div className="flex items-center gap-2 cursor-pointer group">
-          <div className="w-9 h-9 rounded-xl bg-black flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-black/10 group-hover:scale-105 transition-transform duration-200">
+          <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center text-black font-bold text-sm shadow-lg shadow-black/10 group-hover:scale-105 transition-transform duration-200">
             AD
           </div>
           <div className="hidden md:block">
-            <p className="text-sm font-bold text-black leading-none uppercase">
+            <p className="text-sm font-bold text-white leading-none uppercase">
               Admin
             </p>
             <p className="text-[10px] text-neutral-500 mt-0.5 font-bold uppercase tracking-wider">Super Admin</p>

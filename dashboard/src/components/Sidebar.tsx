@@ -48,18 +48,18 @@ export default function Sidebar({ isOpen, toggle }: SidebarProps) {
   return (
     <aside
       className={clsx(
-        "relative flex flex-col bg-black border-r border-neutral-800 transition-all duration-300 ease-in-out h-screen sticky top-0 text-white",
+        "relative flex flex-col bg-white border-r border-neutral-200 transition-all duration-300 ease-in-out h-screen sticky top-0 text-black",
         isOpen ? "w-64" : "w-20"
       )}
     >
       {/* Logo */}
-      <div className="flex items-center h-16 px-4 border-b border-neutral-800">
+      <div className="flex items-center h-16 px-4 border-b border-neutral-200">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center flex-shrink-0 shadow-lg">
-            <LayoutDashboard className="w-5 h-5 text-black" />
+          <div className="w-9 h-9 rounded-xl bg-black flex items-center justify-center flex-shrink-0 shadow-lg">
+            <LayoutDashboard className="w-5 h-5 text-white" />
           </div>
           {isOpen && (
-            <span className="font-bold text-white text-lg tracking-tight">
+            <span className="font-bold text-black text-lg tracking-tight">
               Dashboard
             </span>
           )}
@@ -69,7 +69,7 @@ export default function Sidebar({ isOpen, toggle }: SidebarProps) {
       {/* Toggle Button */}
       <button
         onClick={toggle}
-        className="absolute -right-3.5 top-20 z-10 w-7 h-7 bg-neutral-800 border border-neutral-700 rounded-full flex items-center justify-center text-neutral-400 hover:text-white hover:bg-neutral-700 transition-all duration-200 shadow-md"
+        className="absolute -right-3.5 top-20 z-10 w-7 h-7 bg-neutral-200 border border-neutral-300 rounded-full flex items-center justify-center text-neutral-600 hover:text-black hover:bg-neutral-700 transition-all duration-200 shadow-md"
       >
         {isOpen ? (
           <ChevronLeft className="w-4 h-4" />
@@ -95,8 +95,8 @@ export default function Sidebar({ isOpen, toggle }: SidebarProps) {
               className={clsx(
                 "flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 group",
                 active
-                  ? "bg-white text-black shadow-lg"
-                  : "text-neutral-400 hover:bg-neutral-900 hover:text-white"
+                  ? "bg-black text-white shadow-lg"
+                  : "text-neutral-600 hover:bg-neutral-100 hover:text-black"
               )}
             >
               <Icon className="w-5 h-5 flex-shrink-0" />
@@ -104,7 +104,7 @@ export default function Sidebar({ isOpen, toggle }: SidebarProps) {
                 <span className="text-sm font-medium">{item.label}</span>
               )}
               {active && isOpen && (
-                <span className="ml-auto w-1.5 h-1.5 rounded-full bg-black" />
+                <span className="ml-auto w-1.5 h-1.5 rounded-full bg-white" />
               )}
             </Link>
           );
@@ -112,14 +112,14 @@ export default function Sidebar({ isOpen, toggle }: SidebarProps) {
       </nav>
 
       {/* Bottom Items */}
-      <div className="px-3 py-4 border-t border-neutral-800 space-y-1">
+      <div className="px-3 py-4 border-t border-neutral-200 space-y-1">
         {bottomItems.map((item) => {
           const Icon = item.icon;
           return (
             <Link
               key={item.label}
               href={item.href}
-              className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-neutral-500 hover:bg-neutral-900 hover:text-white transition-all duration-200"
+              className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-neutral-500 hover:bg-neutral-100 hover:text-black transition-all duration-200"
             >
               <Icon className="w-5 h-5 flex-shrink-0" />
               {isOpen && (
